@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+    
+    @media screen and (min-width: 1105px) {
+        #panel-lower {
+            width: 100vw;
+            height: 100vh;
+            background-color: #7B7C76;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+    #letter {
+        width: 32.361111111111114vw;
+        height: 31.759162vh;
+        margin-bottom: 15vh;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1104px) {
+    #panel-lower {
+        width: 100vw;
+        height: 100vh;
+        background-color: #7B7C76;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    #letter {
+        width: 59.361111vw;
+        margin-bottom: 15vh;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #video-individual-box {
+        margin-top: 6vw;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    #video-individual-text {
+        display: flex;
+        margin-top: 2vh;
+        justify-content: space-between;
+        width: 178px;
+    }
+    #navbar-button {
+        color: white;
+        font-size: 2.192448233861145vh;
+        margin-left: 1.5277777777777777vw;
+        font-family: 'Raleway', sans-serif;
+        text-decoration: none;
+    }
+    #video-all {
+        width: 630px;
+        height: 408.047px;
+    }
+    .fa-bars{
+        display: none;
+    }
+    #panel-left {
+        flex-shrink: 10;
+        height: 98.82198952879581vh;
+        width: 47.708333333333336vw;
+        background-image: url('image-painting.jpeg');
+    }
+
+    #panel-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 754px;
+        height: 98.82198952879581vh;
+    }
+
+    #video-individual-box {
+        width: 633px;
+        height: 53.70157068062827vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+
+
+    #video-individual {
+        width: 633px;
+        height: 49.70157068062827vh;
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .fa-bars {
+        color: #ffffffb5;
+        margin-right: 2vw;
+        font-size: 5vh;
+    }
+    #navbar-button {
+        display: none;
+    }
+    #navbar {
+        display: flex;
+        align-content: flex-end;
+        justify-content: flex-end;
+    }
+    #video-all {
+        width: 630px;
+        height: 49.70157068062827vh;
+        background-image: url("image-video.jpeg");
+
+    }
+    #panel-left {
+        display: none;
+    }
+    #panel-right {
+        flex-shrink: 10;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("image-painting.jpeg");
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #panel-lower {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 679px) and (min-width: 540px) {
+    #video-all {
+        width: 500px;
+        height: 313px;
+        background-image: url("image-video-small.jpeg");
+        margin-bottom: 35vh;
+    }
+
+}
+
+@media screen and (max-width: 539px) and (min-width: 361px) {
+    #video-all {
+        width: 350px;
+        height: 227.203px;
+        background-image: url("image-video-smaller.jpeg");
+        margin-bottom: 35vh;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #video-all {
+        width: 280px;
+        height: 175.031px;
+        background-image: url("image-video-smallest.jpeg");
+        margin-bottom: 35vh;
+    }
+}
+
+    #navbar {
+        width: 100vw;
+        height: 8.04vh;
+        background-color: #AFB1A9;
+        display: flex;
+        align-items: center;
+    }
+
+    #letter-navbar-show {
+        display: none;
+    }
+
+    .hide-all {
+        display: none !important;
+    }
+
+    .letter-navbar-hide {
+        display: flex !important;
+        flex-direction: column;
+        height: 86vh;
+        width: 94vw;
+        background:linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("image-painting.jpeg");
+        color: black;
+        padding: 3vh 3vw 3vh 3vw;
+        font-family: 'Raleway', sans-serif;
+        justify-content: space-around;
+    }
+    #para {
+        margin-bottom: 20vh;
+    }
+    #upper-panels {
+        width: 100vw;
+        height: 98.82198952879581vh;
+        display: flex;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+      }
+
+
