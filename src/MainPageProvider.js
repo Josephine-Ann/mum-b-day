@@ -13,7 +13,7 @@ export class MainPageProvider extends React.Component {
                 "Sandra's family", "Maura", "Elaine and Rob", "Shirley",
                 "Karin", "Naomi", "Nathan", "Greg", "Kate and Jono",
                 "Ann Daly", "Frankie", "Ann Tector", "Bobby", "Nora and John",
-                "Jane", "Adeline and Louis", "Nanny", "Peter"],
+                "Jane", "Adeline and Louis", "Nanny", "Peter", "Vicky"],
             orderPicture: 0,
             menuOpen: false,
             url: 'https://youtu.be/XhXvJsGjTmM',
@@ -45,13 +45,15 @@ export class MainPageProvider extends React.Component {
                 'https://youtu.be/NGsvoMVK9Pc',
                 'https://youtu.be/pa6cJpjx_-0',
                 'https://youtu.be/tp2WaPfAkHU',
-
+                'https://youtu.be/myDTbSnrH1A'
             ]
         };
     }
 
     updatePhoto = async (direction) => {
-        if (this.state.orderPicture !== (this.state.pictureChosenArray.length - 1)) {
+        const forward = (this.state.orderPicture !== (this.state.pictureChosenArray.length - 1)) && (direction > 0)
+        const back = ((this.state.orderPicture !== 0) && (direction < 0))
+        if (forward || back) {
             this.setState({
                 orderPicture: (this.state.orderPicture + (direction)),
                 pictureChosen: this.state.pictureChosenArray[this.state.orderPicture + (direction)]
